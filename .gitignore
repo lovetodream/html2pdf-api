@@ -39,3 +39,6 @@ jspm_packages
 
 # Optional DIST folder
 dist
+
+# Environment
+.env
