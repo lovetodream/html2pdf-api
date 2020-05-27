@@ -1,7 +1,7 @@
 {
-  "name": "nodets-boilerplate",
+  "name": "html2pdf-api",
   "version": "1.0.0",
-  "description": "A basic boilerplate for any NodeJS + Typescript projects with a few packages to get started right away",
+  "description": "An simple api which takes html files and generates pdf files",
   "main": "index.js",
   "scripts": {
     "build": "rimraf ./dist && tsc",
@@ -13,7 +13,7 @@
     "prettier-watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}"
   },
   "author": "Timo Zacherl",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "devDependencies": {
     "@types/node": "^14.0.5",
     "@typescript-eslint/eslint-plugin": "^3.0.0",
