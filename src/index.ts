@@ -32,6 +32,6 @@ app.get('/', (req, res) => {
 
 app.use('/htmlToPdf', htmlToPdfRoute);
 
-module.exports = app.listen(port, () => {
+export const appInstance = app.listen(port, () => {
   // console.log(`Server started at http://localhost:${port}`);
 });
