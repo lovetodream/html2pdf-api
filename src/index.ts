@@ -5,6 +5,9 @@ import bodyParser from 'body-parser';
 import helmet from 'helmet';
 import morgan from 'morgan';
 
+// Import Routes
+import htmlToPdfRoute from './routes/htmlToPdfRoute';
+
 dotenv.config();
 
 const app = express();
@@ -17,10 +20,17 @@ app.use(helmet());
 app.use(cors());
 
 // Automatically transforms json objects to js objects
-app.use(bodyParser.json());
+app.use(bodyParser.text());
 
 // Use morgan for logging HTTP requests
 app.use(morgan('combined'));
+
+// Routes
+app.get('/', (req, res) => {
+  res.send({ online: true });
+});
+
+app.use('/htmlToPdf', htmlToPdfRoute);
 
 app.listen(port, () => {
   console.log(`Server started at http://localhost:${port}`);

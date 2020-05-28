@@ -18,6 +18,7 @@
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.6",
     "@types/helmet": "0.0.47",
+    "@types/html5-to-pdf": "^3.1.1",
     "@types/morgan": "^1.9.0",
     "@types/node": "^14.0.5",
     "@typescript-eslint/eslint-plugin": "^3.0.0",
@@ -34,10 +35,12 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "bulma": "^0.8.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^3.22.0",
+    "html5-to-pdf": "^3.2.0",
     "morgan": "^1.10.0"
   }
 }
