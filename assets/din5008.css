@@ -1,0 +1,119 @@
+.din-5008 {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+  width: 210mm;
+  min-height: 200mm;
+  padding-right: 20mm;
+  padding-top: 27mm;
+}
+.din-5008::after,
+.din-5008::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: block;
+  border: 1pt solid var(--markers, rgba(0, 0, 0, 0.3));
+  border-left: none;
+  border-right: none;
+  width: 10mm;
+}
+.din-5008::after {
+  top: 148.5mm;
+  width: 15mm;
+  border-bottom: none;
+}
+.din-5008::before {
+  height: calc(105mm - 1pt);
+  top: 87mm;
+}
+.din-5008.version-b {
+  padding-top: 45mm !important;
+}
+.din-5008.version-b::before {
+  top: 105mm !important;
+}
+.din-5008.version-b::after,
+.din-5008.version-b::before {
+  display: none;
+}
+.din-5008 .address,
+.din-5008 .din-footer,
+.din-5008 .information,
+.din-5008 .letterhead,
+.din-5008 .note-zone,
+.din-5008 .page-count,
+.din-5008 .return,
+.din-5008 .textfield {
+  display: block;
+}
+.din-5008 .letterhead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210mm;
+  height: 27mm;
+}
+.din-5008 .letterhead.version-b {
+  height: 45mm !important;
+}
+.din-5008 .address,
+.din-5008 .note-zone,
+.din-5008 .return {
+  position: absolute;
+  left: 25mm;
+  width: 80mm;
+}
+.din-5008 .return {
+  font-size: 8pt;
+  top: 27mm;
+  height: 5mm;
+}
+.din-5008 .return.version-b {
+  display: none !important;
+}
+.din-5008 .note-zone {
+  top: 32mm;
+  height: 12.7mm;
+}
+.din-5008 .note-zone.version-b {
+  top: 45mm !important;
+  height: 17.7mm !important;
+}
+.din-5008 .address {
+  top: 44.7mm;
+  height: 27.3mm;
+}
+.din-5008 .address.version-b {
+  top: 62.7mm !important;
+  height: 27.3mm !important;
+}
+.din-5008 .information {
+  margin: 5mm 0 8.46mm 125mm;
+  max-width: 75mm;
+  min-height: 40mm;
+}
+.din-5008 .information.version-b {
+  height: 40mm !important;
+}
+.din-5008 .textfield {
+  margin: 0 0 4.23mm 25mm;
+}
+.din-5008 .page-count {
+  text-align: right;
+  margin: 0 0 4.23mm;
+}
+.din-5008 .din-footer {
+  position: absolute;
+  bottom: 6.5mm;
+  left: 25mm;
+  width: 165mm;
+}
+@media print {
+  .din-5008 {
+    width: 210mm;
+  }
+}
