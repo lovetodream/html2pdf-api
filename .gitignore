@@ -42,3 +42,6 @@ dist
 
 # Environment
 .env
+
+# others
+*/.DS_Store
